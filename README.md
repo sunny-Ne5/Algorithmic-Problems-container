@@ -1,4 +1,4 @@
-# dailyInterestingprblms
+# Algorithmic-Problems-container
 
 
 Collection of interesting algorithmic problems which I have come across in my daily coding hunt.  
