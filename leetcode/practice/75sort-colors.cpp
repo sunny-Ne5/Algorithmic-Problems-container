@@ -21,22 +21,32 @@ public:
 		//arrange all the zeros to the left and two's to the right
 		//don't worry about the middle ones
 
-		int start = 0, end = n - 1;
-		for (int i = 0; i < n; i++)
+		if (nums.size() <= 1)
+			return ;
+		int start;
+		for (int i = 0; i < nums.size(); i++)
 		{
 			if (nums[i] == 0)
 			{
-				swap(nums[i], nums[start]);
-				start++;
+				start = i;
+				while (start - 1 >= 0 and nums[start - 1] != 0)
+				{
+					swap(nums[start], nums[start - 1]);
+					start--;
+				}
 			}
 		}
-		int start = 0, end = n - 1;
-		for (int i = 0; i < n; i++)
+		for (int i = nums.size() - 1; i >= 0; i--)
 		{
 			if (nums[i] == 2)
 			{
-				swap(nums[i], nums[start]);
-				end--;
+				start = i;
+
+				while (start + 1 < nums.size() and nums[start + 1] != 2)
+				{
+					swap(nums[start], nums[start + 1]);
+					start++;
+				}
 			}
 		}
 
