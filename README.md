@@ -1,7 +1,7 @@
 # Algorithmic-Problems-container
 
 
-Collection of interesting algorithmic problems which I have come across in my daily coding hunt.  
+Collection of algorithmic problems which I have come across in my daily coding hunt.  
 
 (Interesting is a very subjective term)  
 
